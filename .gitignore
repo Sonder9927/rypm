@@ -7,7 +7,7 @@ wheels/
 *.egg-info
 # Rust
 target/
-# *._lowlevel*
+_lowlevel.*
 
 # venv
 .venv
