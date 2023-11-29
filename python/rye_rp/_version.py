@@ -1,0 +1,5 @@
+__title__ = "rye-rp"
+__version__ = "0.1.0"
+__author__ = "Sonder Merak"
+__license__ = "MIT"
+__copyright__ = "2021-2023, Sonder Merak"
