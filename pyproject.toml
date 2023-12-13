@@ -2,11 +2,8 @@
 name = "rye-rp"
 version = "0.1.0"
 description = "python project structure"
-authors = [
-    { name = "Sonder Merak", email = "merak19981999@gmail.com" }
-]
-dependencies = [
-]
+authors = [{ name = "Sonder Merak", email = "merak19981999@gmail.com" }]
+dependencies = ["duty>=1.1.0"]
 readme = "README.md"
 requires-python = ">= 3.12"
 
@@ -16,11 +13,47 @@ build-backend = "maturin"
 
 [tool.rye]
 managed = true
-dev-dependencies = [
-    "pip>=23.3.1",
-]
+dev-dependencies = ["pip>=23.3.1"]
 
 [tool.maturin]
 python-source = "python"
 module-name = "rye_rp._lowlevel"
 features = ["pyo3/extension-module"]
+
+[project.scripts]
+main-sc = "rye_rp:__main__"
+
+[tool.rye.scripts]
+docs-new = "duty docs_new"
+docs = "duty docs"
+
+[tool.ruff]
+extend-select = [
+  "B",
+  "BLE",
+  "C4",
+  "E",
+  "ERA",
+  "I",
+  "ICN",
+  "INP",
+  "ISC",
+  "N",
+  "NPY",
+  "PGH",
+  "PIE",
+  # "PTH",
+  "Q",
+  "RET",
+  "RSE",
+  "RUF",
+  "S",
+  "SIM",
+  "T20",
+  "TCH",
+  "TID",
+  "YTT",
+]
+ignore = ["E402", "B905", "N818", "S101"]
+show-fixes = true
+target-version = "py310"
