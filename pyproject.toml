@@ -1,9 +1,12 @@
 [project]
 name = "rye-rp"
 version = "0.1.0"
-description = "python project structure"
+description = "python with rust project structure"
 authors = [{ name = "Sonder Merak", email = "merak19981999@gmail.com" }]
-dependencies = ["duty>=1.1.0"]
+dependencies = [
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.5.3",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 
@@ -13,7 +16,9 @@ build-backend = "maturin"
 
 [tool.rye]
 managed = true
-dev-dependencies = ["pip>=23.3.1"]
+dev-dependencies = [
+    "pip>=23.3.2",
+]
 
 [tool.maturin]
 python-source = "python"
@@ -21,11 +26,10 @@ module-name = "rye_rp._lowlevel"
 features = ["pyo3/extension-module"]
 
 [project.scripts]
-main-sc = "rye_rp:__main__"
+hello = "rye_rp:hello"
 
 [tool.rye.scripts]
-docs-new = "duty docs_new"
-docs = "duty docs"
+docs = "rye run mkdocs build"
 
 [tool.ruff]
 extend-select = [
@@ -56,4 +60,4 @@ extend-select = [
 ]
 ignore = ["E402", "B905", "N818", "S101"]
 show-fixes = true
-target-version = "py310"
+target-version = "py312"
