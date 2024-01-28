@@ -1,4 +1,4 @@
-from rye_rp import hello
+from rypm import hello
 
 
 def main():

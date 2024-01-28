@@ -3,7 +3,7 @@ use pyo3::prelude::*;
 /// Prints a message.
 #[pyfunction]
 fn hello() -> PyResult<String> {
-    Ok("Hello rye-rp from rust!".into())
+    Ok("Hello rypm from rust!".into())
 }
 
 /// A Python module implemented in Rust.

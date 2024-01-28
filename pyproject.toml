@@ -1,7 +1,7 @@
 [project]
-name = "rye-rp"
+name = "rypm"
 version = "0.1.0"
-description = "python with rust project structure"
+description = "rye managa python with rust project structure"
 authors = [{ name = "Sonder Merak", email = "merak19981999@gmail.com" }]
 dependencies = [
     "mkdocs>=1.5.3",
@@ -9,7 +9,7 @@ dependencies = [
     "mkdocstrings-python>=1.8.0",
 ]
 readme = "README.md"
-requires-python = ">= 3.12"
+requires-python = ">= 3.11"
 
 [build-system]
 requires = ["maturin>=1.2,<2.0"]
@@ -18,16 +18,15 @@ build-backend = "maturin"
 [tool.rye]
 managed = true
 dev-dependencies = [
-    "pip>=23.3.2",
 ]
 
 [tool.maturin]
 python-source = "python"
-module-name = "rye_rp._lowlevel"
+module-name = "rypm._lowlevel"
 features = ["pyo3/extension-module"]
 
 [project.scripts]
-hello = "rye_rp:hello"
+hello = "rypm:hello"
 
 [tool.rye.scripts]
 docs = "rye run mkdocs build"

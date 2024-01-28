@@ -5,6 +5,7 @@
 #   pre: false
 #   features: []
 #   all-features: false
+#   with-sources: false
 
 -e file:.
 babel==2.14.0
@@ -39,5 +40,3 @@ requests==2.31.0
 six==1.16.0
 urllib3==2.1.0
 watchdog==3.0.0
-# The following packages are considered to be unsafe in a requirements file:
-pip==23.3.2

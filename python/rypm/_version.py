@@ -1,4 +1,4 @@
-__title__ = "rye-rp"
+__title__ = "rypm"
 __version__ = "0.1.0"
 __author__ = "Sonder Merak"
 __license__ = "MIT"

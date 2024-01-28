@@ -1,4 +1,4 @@
-site_name: rye-rp
+site_name: rypm
 theme: material
 
 nav:
@@ -10,6 +10,6 @@ plugins:
 - mkdocstrings:
     handlers:
       python:
-        paths: [python.rye_rp]
+        paths: [python.rypm]
         options:
           show_source: false
