@@ -16,7 +16,7 @@ def __(mo):
     mirana = mo.image(src="images/mirana.png")
     mo.md(
         f"""
-    # rymp
+    # rypm
     {mirana}
     ## Decipt
     Use `rye` to manage `python` + `rust` project. 
