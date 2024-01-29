@@ -1,13 +1,17 @@
-# rye-rp
+# rypm
 
-python project with rust.
+Template repo: `rye` manage `python` + `rust` project.
+
+## show
+Show project with [`marimo`](https://marimo.io):
+![](images/rypm.png)
 
 ## init
 
 ```sh
-rye init project --build-system maturin
-cd project
-rye pin 3.12
+rye init repo --build-system maturin
+cd repo
+# rye pin 3.12
 rye add --dev pip
 # rye install maturin
 rye sync
