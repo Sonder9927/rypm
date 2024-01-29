@@ -3,7 +3,8 @@
 Template repo: `rye` manage `python` + `rust` project.
 
 ## show
-Show project with [`marimo`](https://marimo.io):
+Show project in [marimo](https://marimo.io):
+
 ![](images/rypm.png)
 
 ## init
