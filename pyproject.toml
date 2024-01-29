@@ -7,6 +7,7 @@ dependencies = [
     "mkdocs>=1.5.3",
     "mkdocs-material>=9.5.3",
     "mkdocstrings-python>=1.8.0",
+    "marimo>=0.1.86",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"
@@ -30,6 +31,7 @@ hello = "rypm:hello"
 
 [tool.rye.scripts]
 docs = "rye run mkdocs build"
+rypm = "rye run marimo run python/rypm.py"
 
 [tool.ruff]
 extend-select = [
