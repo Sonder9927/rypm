@@ -1,7 +1,7 @@
-# tpwt frame in python
+# R Y.PM
 ## Python API
 
-There are api in python frame.
+Test api in python frame.
 
-::: rye_rp.temp
+::: rypm.temp
     handler: python
