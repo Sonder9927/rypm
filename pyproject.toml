@@ -8,6 +8,7 @@ dependencies = [
     "mkdocs-material>=9.5.3",
     "mkdocstrings-python>=1.8.0",
     "marimo>=0.1.86",
+    "pytest>=8.1.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"
@@ -18,12 +19,11 @@ build-backend = "maturin"
 
 [tool.rye]
 managed = true
-dev-dependencies = [
-]
+dev-dependencies = []
 
 [tool.maturin]
 python-source = "python"
-module-name = "rypm._lowlevel"
+module-name = "rypm._librypm"
 features = ["pyo3/extension-module"]
 
 [project.scripts]
@@ -32,6 +32,7 @@ hello = "rypm:hello"
 [tool.rye.scripts]
 docs = "rye run mkdocs build"
 rypm = "rye run marimo run python/rypm.py"
+test = "rye run pytest python/tests/test_halo.py"
 
 [tool.ruff]
 extend-select = [

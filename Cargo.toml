@@ -7,6 +7,12 @@ edition = "2021"
 [lib]
 name = "rypm"
 crate-type = ["cdylib"]
+path = "crates/rypm/lib.rs"
 
 [dependencies]
-pyo3 = "0.20.0"
+halo = { path = "crates/halo" }
+
+pyo3 = "0.21"
+
+[workspace]
+members = ["crates/halo"]

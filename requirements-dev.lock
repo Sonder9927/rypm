@@ -9,46 +9,124 @@
 
 -e file:.
 anyio==4.2.0
+    # via starlette
 babel==2.14.0
+    # via mkdocs-material
 black==24.1.1
+    # via marimo
 certifi==2023.11.17
+    # via requests
 charset-normalizer==3.3.2
+    # via requests
 click==8.1.7
+    # via black
+    # via marimo
+    # via mkdocs
+    # via mkdocstrings
+    # via uvicorn
 colorama==0.4.6
+    # via griffe
+    # via mkdocs-material
 ghp-import==2.1.0
+    # via mkdocs
 griffe==0.38.1
+    # via mkdocstrings-python
 h11==0.14.0
+    # via uvicorn
 idna==3.6
+    # via anyio
+    # via requests
+iniconfig==2.0.0
+    # via pytest
 jedi==0.19.1
+    # via marimo
 jinja2==3.1.3
+    # via mkdocs
+    # via mkdocs-material
+    # via mkdocstrings
 marimo==0.1.86
+    # via rypm
 markdown==3.5.2
+    # via marimo
+    # via mkdocs
+    # via mkdocs-autorefs
+    # via mkdocs-material
+    # via mkdocstrings
+    # via pymdown-extensions
 markupsafe==2.1.3
+    # via jinja2
+    # via mkdocs
+    # via mkdocstrings
 mergedeep==1.3.4
+    # via mkdocs
 mkdocs==1.5.3
+    # via mkdocs-autorefs
+    # via mkdocs-material
+    # via mkdocstrings
+    # via rypm
 mkdocs-autorefs==0.5.0
+    # via mkdocstrings
 mkdocs-material==9.5.3
+    # via rypm
 mkdocs-material-extensions==1.3.1
+    # via mkdocs-material
 mkdocstrings==0.24.0
+    # via mkdocstrings-python
 mkdocstrings-python==1.8.0
+    # via rypm
 mypy-extensions==1.0.0
+    # via black
 packaging==23.2
+    # via black
+    # via mkdocs
+    # via pytest
 paginate==0.5.6
+    # via mkdocs-material
 parso==0.8.3
+    # via jedi
 pathspec==0.12.1
+    # via black
+    # via mkdocs
 platformdirs==4.1.0
+    # via black
+    # via mkdocs
+    # via mkdocstrings
+pluggy==1.4.0
+    # via pytest
 pygments==2.17.2
+    # via marimo
+    # via mkdocs-material
 pymdown-extensions==10.7
+    # via marimo
+    # via mkdocs-material
+    # via mkdocstrings
+pytest==8.1.1
+    # via rypm
 python-dateutil==2.8.2
+    # via ghp-import
 pyyaml==6.0.1
+    # via mkdocs
+    # via pymdown-extensions
+    # via pyyaml-env-tag
 pyyaml-env-tag==0.1
+    # via mkdocs
 regex==2023.12.25
+    # via mkdocs-material
 requests==2.31.0
+    # via mkdocs-material
 six==1.16.0
+    # via python-dateutil
 sniffio==1.3.0
+    # via anyio
 starlette==0.36.1
+    # via marimo
 tomlkit==0.12.3
+    # via marimo
 urllib3==2.1.0
+    # via requests
 uvicorn==0.27.0.post1
+    # via marimo
 watchdog==3.0.0
+    # via mkdocs
 websockets==12.0
+    # via marimo
